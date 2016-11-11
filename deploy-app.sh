@@ -25,7 +25,7 @@ fi
 echo $PRO_ROOT
 
 # copy app jianguo style
-if [ -e ${PRO_ROOT}/app ]; then
+if [ -e ${PRO_ROOT}/apps ]; then
   cp -r ${PRO_ROOT}/apps/* ${SERVER_ROOT}/apps/
   cp -r ${PRO_ROOT}/webroot/${app}/* ${SERVER_ROOT}/webroot/${app}/
 else
