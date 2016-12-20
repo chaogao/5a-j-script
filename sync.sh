@@ -20,13 +20,19 @@ case "$type" in
   askweb)
     syname="askwebhuohuo"
     ;;
+  askwebapp)
+    syname="askwebapphuohuo"
+    ;;
+  sxyweb)
+    syname="sxywebhuohuo"
+    ;;
   restful)
     syname="servicehuohuo"
     ;;
 esac
 
 if [ -z "$syname" ]; then
-  echo "type must be web, webapp, cms"
+  echo "type error"
   exit 1
 fi
 
